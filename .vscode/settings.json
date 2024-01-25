@@ -1,7 +1,0 @@
-{
-  "files.associations": {
-    "*.json": "jsonc",
-    "__bit_reference": "cpp",
-    "iostream": "cpp"
-  }
-}
