@@ -6,7 +6,7 @@ void square(vector<int> &vec)
   int leftPtr = 0;
   int rightPtr = vec.size() - 1;
   vector<int> ans;
-  while (leftPtr < rightPtr)
+  while (leftPtr <= rightPtr)
   {
     if (abs(vec[leftPtr]) < abs(vec[rightPtr]))
     {
@@ -19,6 +19,7 @@ void square(vector<int> &vec)
       leftPtr++;
     }
   }
+  reverse(ans.begin(), ans.end());
   for (int i = 0; i < ans.size(); i++)
   {
     cout << ans[i] << " ";
