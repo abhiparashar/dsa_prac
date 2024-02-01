@@ -13,12 +13,16 @@ int largestOfOnes(int arr[][4], int row, int col)
       {
         count++;
       }
-      if (maxCount < count)
-      {
-        maxCount = count;
-        index = i;
-      }
     }
+    if (maxCount < count)
+    {
+      maxCount = count;
+      index = i;
+    }
+  }
+  if (maxCount == 0)
+  {
+    return -1;
   }
   return index;
 };
