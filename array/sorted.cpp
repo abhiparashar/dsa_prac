@@ -12,11 +12,12 @@ int main()
 
   bool ans = false;
 
-  for (int i = 0; i < v.size() - 1; i++)
+  for (int i = 1; i < v.size() - 1; i++)
   {
-    if (v[i] < v[i + 1])
+    if (v[i - 1] < v[i])
     {
       ans = true;
+      break;
     }
   }
 
