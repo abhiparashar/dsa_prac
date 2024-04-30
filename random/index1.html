@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <input id="firstval" type="text" placeholder="first input"/>
+  <input id="secondval" type="text" placeholder="second input" />
+  <input id="finalval" type="text" placeholder="result" />
+  <button onclick={calculate()}>Submit</button>
+  <script>
+    function addme(a,b){
+      return a+b;
+    }
+    function calculate(){
+    const value1 = document.getElementById('firstval').value
+    const value2 = document.getElementById('secondval').value
+    const result = addme(parseInt(value1),parseInt(value2))
+    document.getElementById('finalval').value = result
+    }
+  </script>
+</body>
+</html>
